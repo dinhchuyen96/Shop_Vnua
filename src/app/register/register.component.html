@@ -1,0 +1,39 @@
+<app-toppage></app-toppage>
+<div class="container bgc-register">
+  <div class="row">
+    <form action="" #myForm2="ngForm">
+      <div class="col-md-4 border3 mt-5 mb-5 register">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Đăng ký</h1>
+          </div>
+        </div>
+        <p>Nhanh chóng và dễ dàng</p>
+        <div class="row register-name">
+          <input type="Họ" placeholder="Họ" name="fistname" class="register-fistname" ngModel/>
+          <input type="Tên" placeholder="Tên" name="lastname" class="register-lastname" ngModel/>
+        </div>
+        <div class="row">
+          <input type="text" (click)=" hidewarning()" name="number" placeholder="Email hoặc số điện thoái" ngModel/>
+          <p class="duplicate-ac" *ngIf="!flag">Email đã tồn tại</p>
+          <input type="password" name="passWord" placeholder="Mật khẩu mới" ngModel/>
+        </div>
+        <div class="row">
+          <p class="text-date">Sinh nhật</p>
+          <input placeholder="Sinh nhật" name="dateOfbirth" type="date" class="form-date" ngModel/>
+          <div>
+            <input type="radio" name="sex" value="Nam" ngModel/>Nam
+            <input type="radio" name="sex" value="Nữ" ngModel/>Nữ
+            <input type="radio" name="sex" value="Khác" ngModel/>Khác
+          </div>
+        </div>
+        <div class="row mt-4">
+          <button class="btn btn-primary btn-register" *ngIf="!checkrg" (click)="addNewUser(myForm2.value)">Đăng ký</button>
+          <button class="btn btn-success btn-register" *ngIf="checkrg">Thành công</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<app-footer></app-footer>

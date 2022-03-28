@@ -1,0 +1,58 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2" style="position: fixed;">
+            <form #myForm="ngForm">
+                <div class="mb-2 ">
+                    <label for="exampleFormControlInput1" class="form-label">Thêm Sản Phẩm</label>
+                    <input type="text" class="form-control" name="proName" id="exampleFormControlInput1"
+                        placeholder="Nhập tên sản phẩm" [(ngModel)]="objPro.proName">
+                    <input type="text" class="form-control" name="proPrice" id="exampleFormControlInput2"
+                        placeholder="Nhập giá sản phẩm" [(ngModel)]="objPro.proPrice">
+                    <input type="text" class="form-control" name="proDes" id="exampleFormControlInput31"
+                        placeholder="Mô tả sản phẩm" [(ngModel)]="objPro.proDes">
+                    <input type="text" class="form-control" name="proImage" id="exampleFormControlInput4"
+                        placeholder="Hình ảnh sản phẩm" [(ngModel)]="objPro.proImage">
+                    <input type="text" class="form-control" name="proId" id="exampleFormControlInput5"
+                        placeholder="Nhập mã sản phẩm" [(ngModel)]="objPro.proId">
+                    <input type="text" class="form-control" name="proStt" id="exampleFormControlInput6"
+                        placeholder="Nhập tình trạng sản phẩm" [(ngModel)]="objPro.proStt">
+                    <input type="hidden" class="form-control" name="id" id="exampleFormControlInput7"
+                        placeholder="thẻ ẩn ID" [(ngModel)]="objPro.id">
+                </div>
+                <div class="mb-3">
+                    <button type="button" class="btn btn-primary" (click)="addNewPro(myForm.value)"
+                        *ngIf="!checkAction">Thêm
+                        mới</button>
+                    <button type="button" class="btn btn-primary" (click)="updatePro(myForm.value)"
+                        *ngIf="checkAction">Cập Nhật</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-10" style="margin-left: 13rem;">
+            <table class="bangsp">
+                <tr>
+                    <th>#</th>
+                    <th>Tên Sản Phẩm</th>
+                    <th>Giá</th>
+                    <th>Mô tả</th>
+                    <th>Hình ảnh</th>
+                    <th>Mã Sản Phẩm</th>
+                    <th>Trạng thái</th>
+                    <th>Sửa</th>
+                    <th>Xóa</th>
+                </tr>
+                <tr *ngFor="let itemPro of dataPro">
+                    <td>{{itemPro.id}}</td>
+                    <td>{{itemPro.proName}}</td>
+                    <td>{{itemPro.proPrice}}</td>
+                    <td id="thongtinsp">{{itemPro.proDes}}</td>
+                    <td>{{itemPro.proImage}}</td>
+                    <td>{{itemPro.proId}}</td>
+                    <td>{{itemPro.proStt}}</td>
+                    <td><button type="button" class="btn btn-warning" (click)="editPro(itemPro)">Sửa</button></td>
+                    <td><button type="button" class="btn btn-danger" (click)="deletePro(itemPro)">Xóa</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

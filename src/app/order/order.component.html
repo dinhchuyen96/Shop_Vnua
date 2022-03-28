@@ -1,0 +1,209 @@
+<app-toppage></app-toppage>
+
+<body>
+  <div class="container-fluid" id="contene">
+    <div class="row itemod pt-4">
+      <form action="" #formOrder="ngForm" method="post">
+        <div class="row ms-2">
+          <div class="col-md-7">
+            <div id="khung">
+              <img src="assets/images/{{itemPro.proImage}}.jpg" alt="" />
+              <a routerLink="/detail/{{itemPro.id}}"
+                ><h3 id="proName">{{itemPro.proName}}</h3></a>
+                <input type="hidden" name="odNameSp" [(ngModel)]="itemPro.proName" value="">
+                <input type="hidden" name="id" ngModel >
+                <!-- ít khi người ta dùng two way binding lắm anh nên thay nó bằng event để tăng cái số lượng và giảm số lượng xuống-->
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="row">
+              <div class="mt-4 price1">
+                <h4>
+                  <span id="price">{{itemPro.proPrice}}</span
+                  >.000₫
+                </h4>
+              </div>
+              <div style="display: flex">
+                <button id="minus" (click)="minus(); tamtinh1(); uudai()">
+                  <i class="fas fa-minus"></i>
+                </button>
+                <h3>
+                  <input
+                    id="sl"
+                    type="text"
+                    name="sosp"
+                    [(ngModel)]="od"
+                    (change)="tamtinh1(); uudai()"
+                    value="{{ od }}"
+                  />
+                </h3>
+                <button id="plus" (click)="plus(); tamtinh1(); uudai()">
+                  <i class="fas fa-plus"></i>
+                </button>
+              </div>
+              <div *ngIf="!checkuc" class="discount mt-3" id="usedc1">
+                <button class="btn btn-light" id="usedc" (click)="showuc()">
+                  <i class="fas fa-percent"></i> Sử dụng mã giảm giá
+                </button>
+              </div>
+                <div
+                  *ngIf="checkuc"
+                  id="discount"
+                  class="mt-3"
+                  style="display: flex"
+                >
+                  <input
+                    type="text"
+                    id="ipdc"
+                    placeholder="Nhập mã giảm giá"
+                    [(ngModel)]="codedc"
+                    name="code"
+                  />
+                  <button
+                    type="button"
+                    id="apdung"
+                    class="btn btn-primary"
+                    (click)="apdung()"
+                  >
+                    Áp dụng
+                  </button>
+                </div>
+              
+              <p id="ercode" style="color: red" *ngIf="checktb">
+                Mã không chính xác
+              </p>
+              <p id="ercode2" style="color: rgb(32, 212, 32)" *ngIf="checktc">
+                Áp dụng thành công mã
+              </p>
+              <h5 id="ercode4" style="color: rgb(32, 212, 32)" *ngIf="checkud">
+                Số lượng > 100, liên hệ 1900 để nhận ưu đãi đặc biệt
+              </h5>
+              <!-- <button id="tinhcmntien">tính tiền</button> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="row ms-2">
+          <div class="col-md-6 mt-4 summoney">
+            <p class="mt-3">
+              Tạm tính: <span id="tamtinh">{{ tamtinh }}</span
+              >.000₫
+            </p>
+
+            <input type="hidden" [(ngModel)]="tamtinh" name="giatamtinh" value="{{ tamtinh }}">
+            <p id="codedc3" *ngIf="checktc">
+              Mã giảm giá: <span id="codedc2">{{ codeview }}</span> - giảm
+              <input type="hidden" [(ngModel)]="codepercent" ngModel name="giamgia" value="{{codepercent}}">
+              <span id="chietkhau">{{ codepercent }}</span
+              >%
+            </p>
+
+            <p></p>
+            <hr style="width: 65%; margin-bottom: 0px; color: blue" />
+            <h4 id="tong">
+              Tổng tiền: <span id="tongtien">{{ tongtien }}</span
+              >.000₫
+            </h4>
+            <input
+              type="hidden"
+              name="tongtien"
+              [(ngModel)] = "tongtien"
+              value="{{ tongtien }}"
+            />
+            ({{ od }} sản phẩm)
+          </div>
+          <hr class="mt-3" style="width: 100%" />
+        </div>
+
+        <div class="row ms-2">
+          <div class="col-md-12">
+            <h4>Thông tin khách hàng</h4>
+
+            <div style="display: flex">
+              <div style="margin-right: 40px">
+                <input type="radio" name="gioitinh" id="nam" value="Anh" ngModel/><label for=""
+                  >Anh</label>
+              </div>
+              <div>
+                <input type="radio" id="nu" name="gioitinh" value="Chị" ngModel /><label for=""
+                  >Chị</label
+                >
+              </div>
+            </div>
+            <div class="mt-1" style="display: flex">
+              <input
+                class="form-control"
+                type="text"
+                id="ipName"
+                placeholder="Họ và Tên"
+                name="odName"
+                ngModel
+              />
+              <input
+                class="form-control"
+                type="text"
+                id="ipNumber"
+                placeholder="Số điện thoại"
+                name="odNumber"
+                ngModel
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row mt-1" style="display: flex">
+          <input
+            class="form-control"
+            id="ipTinh"
+            type="text"
+            placeholder="Tỉnh"
+            name="odTinh"
+            ngModel
+          />
+          <input
+            class="form-control"
+            id="ipHuyen"
+            type="text"
+            placeholder="Huyện"
+            name="odHuyen"
+            ngModel
+          />
+        </div>
+        <div class="row mt-1">
+          <input
+            class="form-control"
+            id="ipXa"
+            type="text"
+            placeholder="Thôn / xã"
+            name="odXa"
+            ngModel
+          />
+          <input
+            class="form-control"
+            id="ipXom"
+            type="text"
+            placeholder="Xóm / đường / số nhà"
+            name="odXom"
+            ngModel
+          />
+          <input type="hidden" name="tinhtrang" ngModel/>
+        </div>
+      </form>
+      <div class="row mt-4 mb-2">
+        <div class="col-md-6" style="margin: 0 auto">
+          <button
+            type="button"
+            (click)="addNeworder(formOrder.value)"
+            id="dathang"
+            class="btn btn-success mb-2"
+            *ngIf="!check21"
+          >
+            ĐẶT HÀNG
+          </button>
+          <button type="button" class="btn btn-success btft mt-3" id="orderss" *ngIf="check21">Thành công</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>
+
+</body>

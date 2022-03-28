@@ -1,0 +1,473 @@
+{
+  "category": [
+    {
+      "catName": "Phong Lan",
+      "id": 1
+    },
+    {
+      "catName": "Địa Lan",
+      "id": 2
+    }
+  ],
+  "cart": [
+    {
+      "idcart": 1,
+      "nameCart": "5 cánh trắng",
+      "imgCart": "pl-5ct",
+      "priceCart": "150",
+      "id": 1
+    },
+    {
+      "idcart": 5,
+      "nameCart": "Phong Lan rừng",
+      "imgCart": "pl-4",
+      "priceCart": "122",
+      "id": 2
+    },
+    {
+      "idcart": 6,
+      "nameCart": " Nhất Điểm Kỳ Hồng",
+      "imgCart": "pl-8",
+      "priceCart": "555",
+      "id": 3
+    },
+    {
+      "idcart": 12,
+      "nameCart": "Ngọc sơn cước",
+      "imgCart": "pl-nsc",
+      "priceCart": "450",
+      "id": 4
+    },
+    {
+      "idcart": 13,
+      "nameCart": "5CT Lâm Xung",
+      "imgCart": "pl-5ctlx",
+      "priceCart": "799",
+      "id": 5
+    }
+  ],
+  "comments": [
+    {
+      "comments": "12121212 chào mừng đến với Việt Nam",
+      "idc": "6",
+      "id": 5
+    },
+    {
+      "comments": "Phong Lan rừng rất đẹp",
+      "idc": "5",
+      "id": 6
+    },
+    {
+      "comments": "Tôi đã mua Lan Lá Gấm nha",
+      "idc": "7",
+      "id": 8
+    },
+    {
+      "comments": "Đây là Lan Hạc đính nâu",
+      "idc": "8",
+      "id": 9
+    },
+    {
+      "comments": "Lan Hài Hồng rất ngon",
+      "idc": "10",
+      "id": 16
+    },
+    {
+      "comments": []
+    },
+    {
+      "comments": "Tôi đã mua về trông thử và hài lòng về sản phẩm. Cám ơn shop!",
+      "idc": "1",
+      "namecmt": "Nguyễn ĐÌnh CHuyên",
+      "id": 17
+    },
+    {
+      "comments": "ahii",
+      "idc": "12",
+      "namecmt": "Nguyễn ĐÌnh CHuyên",
+      "name": "Nguyễn ĐÌnh CHuyên",
+      "id": 18
+    },
+    {
+      "comments": "ahihi đồ ngốc",
+      "idc": "12",
+      "namecmt": "Nguyễn ĐÌnh CHuyên",
+      "name": "Nguyễn ĐÌnh CHuyên",
+      "id": 19
+    },
+    {
+      "comments": "thử lần nữa",
+      "idc": "12",
+      "namecmt": "Nguyễn ĐÌnh CHuyên",
+      "name": "Nguyễn ĐÌnh CHuyên",
+      "id": 20
+    },
+    {
+      "comments": "ad",
+      "idc": "1",
+      "namecmt": "Nguyễn ĐÌnh CHuyên",
+      "timecmt": "",
+      "name": "Nguyễn ĐÌnh CHuyên",
+      "id": 21
+    },
+    {
+      "comments": "hihi",
+      "idc": "1",
+      "namecmt": "Nguyễn ĐÌnh CHuyên",
+      "timecmt": "",
+      "name": "Nguyễn ĐÌnh CHuyên",
+      "id": 22
+    }
+  ],
+  "userloging": [
+    {
+      "fistname": "Nguyễn ĐÌnh",
+      "lastname": "CHuyên",
+      "number": "admin",
+      "passWord": "123123",
+      "dateOfbirth": "1996-03-23",
+      "id": 1
+    }
+  ],
+  "user1": [
+    {
+      "fistname": "Nguyễn ĐÌnh",
+      "lastname": "CHuyên",
+      "number": "admin",
+      "passWord": "123123",
+      "dateOfbirth": "1996-03-23",
+      "id": 1
+    },
+    {
+      "fistname": "Nguyễn Đình ",
+      "lastname": "Chính",
+      "number": "01684521652",
+      "passWord": "123123",
+      "dateOfbirth": "1996-05-26",
+      "sex": "Nữ",
+      "id": 2
+    },
+    {
+      "fistname": "Nguyễn Bá",
+      "lastname": "Yên",
+      "number": "yen",
+      "passWord": "123",
+      "dateOfbirth": "",
+      "sex": "Nam",
+      "id": 3
+    },
+    {
+      "fistname": "Tuan",
+      "lastname": "Anh",
+      "number": "tuanan",
+      "passWord": "1",
+      "dateOfbirth": "",
+      "sex": "Nam",
+      "id": 4
+    },
+    {
+      "fistname": "Vũ Văn ",
+      "lastname": "Đoàn",
+      "number": "khoi",
+      "passWord": "1",
+      "dateOfbirth": "",
+      "sex": "Nam",
+      "id": 5
+    },
+    {
+      "fistname": "duy",
+      "lastname": "nguyendang",
+      "number": "duy",
+      "passWord": "123",
+      "dateOfbirth": "",
+      "sex": "",
+      "id": 6
+    },
+    {
+      "fistname": "Nguyễn Đình ",
+      "lastname": "Chính",
+      "number": "chinh",
+      "passWord": "123",
+      "dateOfbirth": "2021-11-27",
+      "sex": "Nam",
+      "id": 7
+    },
+    {
+      "fistname": "Nguyễn Bá ",
+      "lastname": "Tuấn Anh",
+      "number": "tuananh",
+      "passWord": "123",
+      "dateOfbirth": "2005-12-03",
+      "sex": "Nam",
+      "id": 9
+    },
+    {
+      "fistname": "Nguyễn Đình ",
+      "lastname": "Đoàn",
+      "number": "admin",
+      "passWord": "111",
+      "dateOfbirth": "",
+      "sex": "Nam",
+      "id": 10
+    },
+    {
+      "fistname": "Đinh Thị ",
+      "lastname": "Trang",
+      "number": "admin2",
+      "passWord": "123123",
+      "dateOfbirth": "2021-12-23",
+      "sex": "Nữ",
+      "id": 11
+    },
+    {
+      "fistname": "Kiều Duy",
+      "lastname": "Long",
+      "number": "long",
+      "passWord": "123",
+      "dateOfbirth": "2021-12-23",
+      "sex": "Nam",
+      "id": 12
+    },
+    {
+      "fistname": "Nguyễn ĐÌnh ",
+      "lastname": "Chính",
+      "number": "admin1",
+      "passWord": "123123",
+      "dateOfbirth": "2021-12-22",
+      "sex": "Nam",
+      "id": 13
+    }
+  ],
+  "my-orders": [
+    {
+      "id": 2,
+      "odNameSp": "Lan Hạc đính nâu ",
+      "sosp": 5,
+      "code": "gg",
+      "giatamtinh": 1800,
+      "tongtien": 1620,
+      "gioitinh": "Anh",
+      "odNumber": "4778966",
+      "odName": "Nguyễn Đức Giang",
+      "odTinh": "Nam Định",
+      "odHuyen": "Ý Yên",
+      "odXa": "Thuận Thành",
+      "odXom": "dddddd",
+      "tinhtrang": "đã giao ngày 26/8/2021"
+    },
+    {
+      "id": 4,
+      "odNameSp": "Phong Lan rừng",
+      "sosp": 2,
+      "giatamtinh": 244,
+      "tongtien": 244,
+      "gioitinh": "Anh",
+      "odNumber": "45213652",
+      "odName": "Dũng",
+      "odTinh": "Hà Nội",
+      "odHuyen": "Hoài Đức",
+      "odXa": "Tiền Lệ / Tiền Yên",
+      "odXom": "nhà số 2 ngõ 4",
+      "tinhtrang": "akakak"
+    },
+    {
+      "id": 5,
+      "odNameSp": "Phong Lan rừng",
+      "sosp": 2,
+      "giatamtinh": 244,
+      "tongtien": 244,
+      "gioitinh": "Anh",
+      "odNumber": "0368923534",
+      "odName": "Nguyễn Thị Thúy",
+      "odTinh": "Hà Nội",
+      "odHuyen": "Hoài Đức",
+      "odXa": "Tiền Lệ / Tiền Yên",
+      "odXom": "số 8 ngõ 1 đường cối sa",
+      "tinhtrang": "hihi"
+    },
+    {
+      "id": 6,
+      "odNameSp": "Ngọc sơn cước",
+      "sosp": 1,
+      "code": "gg",
+      "giatamtinh": 450,
+      "tongtien": 405,
+      "gioitinh": "Anh",
+      "odNumber": "0368923534",
+      "odName": "Nguyễn Thị Thúy",
+      "odTinh": "Hà Nội",
+      "odHuyen": "Hoài Đức",
+      "odXa": "Tiền Lệ / Tiền Yên",
+      "odXom": "số 8 ngõ 1 đường cối sa",
+      "tinhtrang": "huhuhs"
+    },
+    {
+      "id": 21,
+      "odNameSp": "5CT Lâm Xung",
+      "sosp": 1,
+      "giatamtinh": 799,
+      "tongtien": 799,
+      "gioitinh": "Anh",
+      "odNumber": "0384521652",
+      "odName": "Nguyễn Đình Quý",
+      "odTinh": "Hà Nội",
+      "odHuyen": "Hoài Đức",
+      "odXa": "Tiền Lệ / Tiền Yên",
+      "odXom": "số 8 ngõ 1 đường cối sa",
+      "tinhtrang": "đã giao"
+    }
+  ],
+  "dccode": [
+    {
+      "code": "gg",
+      "persent": "10",
+      "id": 1
+    },
+    {
+      "code": "mh5",
+      "persent": "15",
+      "id": 2
+    },
+    {
+      "code": "hh",
+      "persent": "70",
+      "id": 3
+    },
+    {
+      "code": "cc",
+      "persent": "50",
+      "id": 5
+    },
+    {
+      "code": "vv",
+      "persent": "50",
+      "id": 6
+    }
+  ],
+  "addproduct": [
+    {
+      "proName": "5 cánh trắng",
+      "proPrice": "150",
+      "proDes": "Theo một số người chơi lan lâu năm, cây lan phi điệp 5 cánh trắng đầu tiên ở Phú Thọ được  mọc tự nhiên ở cây đa khu đình, chùa xã Cổ Tiết huyện Tam Nông (nay thuộc khu 5, xã Cổ Tiết). Cây ở khu thờ tự linh thiêng, tuy hàng năm có hoa rất đẹp nhưng dân làng không ai dám lấy về trồng, bà con thường đến ngắm hoa và gọi là “cây cơm chùa”. Cuối năm 1972 do chiến tranh, đoàn xiếc Trung ương sơ tán về xã Cổ Tiết. Thấy hoa lan trắng rất đẹp mắt, anh em trong đoàn xiếc lấy về trồng ở các hộ mình ở trọ. Từ đó đến nay, cây lan phi điệp 5 cánh trắng ngày càng được nhân rộng, đón nhận tình yêu của rất nhiều người chơi lan.",
+      "proImage": "pl-5ct",
+      "proId": "1",
+      "proStt": "còn hàng",
+      "id": 1
+    },
+    {
+      "proName": "Địa Lan",
+      "proPrice": "666",
+      "proDes": "  Hoa lan hồ điêp là hoa lớn dễ dàng, nỏ hoa ở nhiều điều kiên khác nhau. Do vậy theo các nước ở Châu Âu lan hồ điệp luôn được coi là một món quà của tình yêu. Lan hồ điệp sẽ thể hiện tình yêu mạnh mẽ vượt qua mọi rào cản.Lan hồ điệp tượng trưng cho sự sang trong sung túc.",
+      "proImage": "dl-2",
+      "proId": "2",
+      "proStt": "còn hàng",
+      "id": 3
+    },
+    {
+      "proName": "Phong Lan rừng",
+      "proPrice": "122",
+      "proDes": "màu tím",
+      "proImage": "pl-4",
+      "proId": "1",
+      "proStt": "còn hàng",
+      "id": 5
+    },
+    {
+      "proName": " Nhất Điểm Kỳ Hồng",
+      "proPrice": "555",
+      "proDes": "lấy trên facebook",
+      "proImage": "pl-8",
+      "proId": "1",
+      "proStt": "còn hàng",
+      "id": 6
+    },
+    {
+      "proName": "Lan lá Gấm",
+      "proPrice": "250",
+      "proDes": "Cây có thân rễ bò dài, sau đó vươn lên, mật. Lá bầu dục, phiến màu nhung đen, nổi rõ các gân mảnh dọc theo lá màu đỏ, mặt dưới lá đỏ. Cụm hoa mọc thẳng từ đỉnh, hoa thưa màu trắng. Lan gấm gặp ở hầu hết các vùng trong cả nước ở độ cao thấp.",
+      "proImage": "dl-gam",
+      "proId": "2",
+      "proStt": "còn hàng",
+      "id": 7
+    },
+    {
+      "proName": "Lan Hạc đính nâu ",
+      "proPrice": "360",
+      "proDes": "Cây có củ giả lớn, thân cao 50-60cm, lá lớn. Cụm hoa thẳng, mọc từ nách lá gốc củ giả, cao tới 70cm. hoa nhiều, rất lớn, màu trắng ở mặt ngoài, nâu ở mặt trong. Cánh môi màu đỏ có vạch vàng. Cây mọc rải rác ở hầu hết các vùng trên các sình lầy ở độ cao thấp và trung bình.",
+      "proImage": "dl-hac",
+      "proId": "2",
+      "proStt": "còn hàng",
+      "id": 8
+    },
+    {
+      "proName": "Lan Chu đinh tím",
+      "proPrice": "500",
+      "proDes": "Cây có củ giả nhỏ, thân cao 40-50cm. lá thuôn dài. Cụm hoa thẳng mang hoa ở đỉnh. Có từ 7-10 bông, lớn, màu tím hay trắng. Cánh môi màu tím đậm, có họng vàng nhỏ. Loài có nguồn gốc từ vùng phía Nam trên núi đất ở độ cao thấp.",
+      "proImage": "dl-chu",
+      "proId": "2",
+      "proStt": "còn hàng",
+      "id": 9
+    },
+    {
+      "proName": "Lan Hài hồng",
+      "proPrice": "399",
+      "proDes": "Loài lan này có mặt ở Nha Trang (Khánh Hòa) và giữa Ninh Thuận - Khánh Hòa tại độ cao khoảng 800 - 1300m. Dễ trồng, hoa có màu trắng pha hồng, đặc biệt cánh môi thường có màu hồng. Mọc trên đất. Cây có các hình lá bầu dục dẹp màu xanh với vân đậm nhạt, ở mặt trên và dưới có nhiều chấm nâu đỏ đôi khi dày đặc thành một màu hung đỏ. Cụm hoa thường mang 1-2 hoa, kích thước hoa 9x7cm, hoa thường nở vào mùa đông, độ bền hoa 20-40 ngày, có hương thơm. Cây ưa ẩm và thoáng, ánh sáng tán xạ che 10-40%, nhiệt độ 13-350C. Giá thể thích hợp là mùn, dớn hoặc xơ dừa.",
+      "proImage": "dl-hai",
+      "proId": "2",
+      "proStt": "còn hàng",
+      "id": 10
+    },
+    {
+      "proName": "Lan Hài liên",
+      "proPrice": "99",
+      "proDes": "Loài này có mặt ở Thái Nguyên với độ cao trung bình từ 500-800m, dễ trồng, hoa có màu nâu với đài trên màu trắng, mọc trên đất đôi khi trên đá. Cây có các loại lá dạng dải, hơi mềm, mặt trên màu xanh đậm với mép lá màu xanh hay màu trắng, mặt dưới xanh nhạt. Cụm hoa mang 1 hoa, kích thước hoa 6x7cm, hoa thường nở vào mùa đông, độ bền hoa > 45 ngày, hơi có hương thơm. Cây ưa ẩm và thoáng, ánh sáng tán xạ che 10-40%, nhiệt độ 5-350C. Giá thể thích hợp là dớn và xơ dừa và nên bổ sung đá vôi.",
+      "proImage": "dl-lien",
+      "proId": "2",
+      "proStt": "còn hàng",
+      "id": 11
+    },
+    {
+      "proName": "Ngọc sơn cước",
+      "proPrice": "450",
+      "proDes": "Lan đột biến mang một vẻ đẹp rất đặc sắc, vô cùng độc đáo, hiếm có. Mặt hoa và màu sắc đẹp hài hòa, thanh tao. Hoa có mắt gọn, mũi trắng, họng trắng trong, phân thùy rõ nét, cánh bồng vai ngang… đã làm cho giới sành chơi hoa mê đắm và sự khan hiếm nên những người chơi lan ai cũng ao ước có được nó. Việc nhân giống lan đột biến khá hạn chế bởi giống lan var không thể nuôi cấy mô hay gieo hạt được. Hàng tấn lan rừng họa may mới có được một cây đột biến gen, vì thế lan var vô cùng quý hiếm và được giới chơi lan var săn lùng ráo riết.",
+      "proImage": "pl-nsc",
+      "proId": "1",
+      "proStt": "còn hàng",
+      "id": 12
+    },
+    {
+      "proName": "5CT Lâm Xung",
+      "proPrice": "799",
+      "proDes": "Lưỡi bệt Đặc điểm nhận dạng đầu tiên của năm cánh trắng Lâm Xung đó chính là lưỡi bệt. Trước hết cần nhận ra chúng là lưỡi bệt rồi sau đó phân biệt khác. Lưỡi bệt ở đây chính là hệ thống lưỡi 1 màu phủ đều toàn bộ lưỡi. Như các dòng 5CT khác thường có có màu trắng và chỉ có hệ thống mắt với màu khác biệt.Viền lưỡi có lông màu trắng Nếu chỉ nhìn lưỡi để đánh giá thì có thể nhầm với các dòng phi điệp tím đột biến khác như Tống Giang. Vì thế hãy nhìn trên viền lưỡi hoa đó nếu thấy sự xuất hiện của các sợi lông tơ nhỏ chạy dọc viền của lưỡi. Các dòng lưỡi bệt khác không có đặc điểm này nên việc phân biệt và nhận ra dòng 5CT Lâm Xung tương đối dễ so với các dòng 5CT khác.",
+      "proImage": "pl-5ctlx",
+      "proId": "1",
+      "proStt": "còn hàng",
+      "id": 13
+    },
+    {
+      "proName": "5CT bạch tuyết",
+      "proPrice": "255",
+      "proDes": "Nếu chỉ nhìn vào các đặc điểm của lan 5CT để nhận ra được dòng này là khá khó. Bởi chúng đều khá giống nhau và chỉ khác nhau ở 1 số bộ phận mà thôi. Bộ phận rõ rệt nhất của dòng 5CT Bạch Tuyết đó chính là hệ thống những lông tơ nhỏ mịn trên lưỡi hoa. Tạo nên hệ thống nhung tuyết rất khác biệt.",
+      "proImage": "pl-5ctbt",
+      "proId": "1",
+      "proStt": "còn hàng",
+      "id": 14
+    }
+  ],
+  "inforcus": [
+    {
+      "id": 2,
+      "ifName": "Nguyễn Bá Yên",
+      "ifNumber": "1568946",
+      "ifEmail": "bayen@gmail.xom",
+      "ifNote": "fuck youq"
+    },
+    {
+      "id": 3,
+      "ifName": "ccccccccc",
+      "ifNumber": "acac",
+      "ifEmail": "ccccccc",
+      "ifNote": "fuck you 123"
+    }
+  ]
+}

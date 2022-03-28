@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 thongtin mt-4">
+            <h1><span class="">Thông tin khách hàng</span></h1>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-12">
+            <table class="table-info">
+                <tr>
+                    <th class="col-md-1">STT</th>
+                    <th class="col-md-3">Họ và tên</th>
+                    <th class="col-md-2">Số điện thoại</th>
+                    <th class="col-md-3">Email</th>
+                    <th class="col-md-3">Ghi chú</th>
+                    <!-- <th class="col-md-1">Edit</th>
+                    <th class="col-md-1">Delete</th> -->
+                </tr>
+                <tr *ngFor="let itemIf of dataIf">
+                    <td>{{itemIf.id}}</td>
+                    <td>{{itemIf.ifName}}</td>
+                    <td>{{itemIf.ifNumber}}</td>
+                    <td>{{itemIf.ifEmail}}</td>
+                    <td class="">{{itemIf.ifNote}}</td>
+                    <td><button type="button" class="btn btn-warning" (click)="editNote(itemIf)">Sửa</button></td>
+                    <td><button type="button" class="btn btn-danger" (click)="deleteIf(itemIf)">Xóa</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <form #myForm3="ngForm" action="">
+            <input type="hidden" name="id" [(ngModel)]="inforCus.id">
+            <input type="hidden" name="ifName" placeholder="Họ và tên" [(ngModel)]="inforCus.ifName">
+            <input type="hidden" name="ifNumber" placeholder="Số điện thoại" [(ngModel)]="inforCus.ifNumber">
+            <input type="hidden" name="ifEmail" placeholder="Email" [(ngModel)]="inforCus.ifEmail">
+            <input id="myInput" class="noteIf" type="text" name="ifNote"
+                placeholder="                Ghi chú khách hàng" [(ngModel)]="inforCus.ifNote">
+        </form>
+    </div>
+    <div class="row">
+        <div class="col-md-4 btNote mt-3">
+            <button type="button" class="btn btn-primary" onclick="document.getElementById('myInput').value = ''"
+                (click)="updateifNote(myForm3.value)">Cập nhật ghi chú khách hàng</button>
+        </div>
+    </div>
+
+</div>

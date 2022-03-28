@@ -1,0 +1,58 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <form #myForm="ngForm">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Thêm danh mục</label>
+                    <input type="text" class="form-control" name="code" id="exampleFormControlInput1"
+                        placeholder="Nhập mã giảm giá" [(ngModel)]="objCode.code">
+                    <input type="text" class="form-control" name="persent" id="exampleFormControlInput1"
+                        placeholder="Nhập phần trăm giảm" [(ngModel)]="objCode.persent">
+                    <input type="hidden" class="form-control" name="id" id="exampleFormControlInput1"
+                        placeholder="thẻ ẩn ID" [(ngModel)]="objCode.id">
+                </div>
+                <div class="mb-3">
+                    <button type="button" class="btn btn-primary" (click)="addNewCode(myForm.value)" *ngIf="!checkAction">Thêm
+                        mới</button>
+                    <button type="button" class="btn btn-primary" (click)="updateCode(myForm.value)" *ngIf="checkAction">Cập Nhật</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-4">
+            <table class="table-primary table-striped">
+                <tr class="table-primary">
+                    <th style="width: 50px;"> # </th>
+                    <th style="width: 100px;">Mã code</th>                    
+                    <th style="width: 150px;">Phần Trăm giảm</th >
+                    <th>Sửa</th>
+                    <th>Xóa</th>
+                </tr>
+                <tr *ngFor="let itemCode of dataCode">
+                    <td>{{itemCode.id}}</td>
+                    <td>{{itemCode.code}}</td>
+                    <td>{{itemCode.persent}}</td>
+                    <td><button type="button" class="btn btn-warning" (click)="editCode(itemCode)">Sửa</button></td>
+                    <td><button type="button" class="btn btn-danger" (click)="deleteCode(itemCode)">Xóa</button></td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-md-4">
+            <table class="table-primary table-striped">
+                <tr class="table-primary">
+                    <th style="width: 50px;"> # </th>
+                    <th style="width: 100px;">Mã code</th>                    
+                    <th style="width: 150px;">Phần Trăm giảm</th >
+                    <th>Sửa</th>
+                    <th>Xóa</th>
+                </tr>
+                <tr *ngFor="let itemCode of dataCode">
+                    <td>{{itemCode.id}}</td>
+                    <td>{{itemCode.code}}</td>
+                    <td>{{itemCode.persent}}</td>
+                    <td><button type="button" class="btn btn-warning" (click)="editCode(itemCode)">Sửa</button></td>
+                    <td><button type="button" class="btn btn-danger" (click)="deleteCode(itemCode)">Xóa</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

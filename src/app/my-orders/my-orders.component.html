@@ -1,0 +1,126 @@
+<div class="container">
+  <form #formOd="ngForm" id="dataod">
+    <div class="col-md-12">
+      <table id="table-oders" class="table-primary table-striped">
+        <tr class="table-primary">
+          <th>#</th>
+          <th>Khách Hàng</th>
+          <th>Số điện thoại</th>
+          <th>Địa Chỉ</th>
+          <th>Tên sản phẩm</th>
+          <th>Sl</th>
+          <th>Thành tiền</th>
+          <th>Code gg</th>
+          <th>Trạng thái giao hàng</th>
+        </tr>
+        <tr *ngFor="let itemOd of dataOd">
+          <td name="id" [(ngModel)]="objOd.id">{{ itemOd.id }}</td>
+          <td>{{ itemOd.gioitinh }} {{ itemOd.odName }}</td>
+          <td>{{ itemOd.odNumber }}</td>
+          <td>
+            {{ itemOd.odXom }} {{ itemOd.odXa }} {{ itemOd.odHuyen }}
+            {{ itemOd.odTinh }}
+          </td>
+          <td>{{ itemOd.odNameSp }}</td>
+          <td>{{ itemOd.sosp }}</td>
+          <td>{{ itemOd.tongtien }}.000 ₫</td>
+          <td>{{ itemOd.code }}-{{ itemOd.giamgia }}%</td>
+          <td>
+            <input type="text" value="{{ itemOd.tinhtrang }}" />
+          </td>
+          <td>
+            <button
+              type="button"
+              (click)="editOd(itemOd)"
+              class="btn btn-danger"
+            >
+              Sửa
+            </button>
+          </td>
+
+          <td>
+            <button
+              type="button"
+              class="btn btn-danger"
+              (click)="deleteOd(itemOd)"
+            >
+              Xóa
+            </button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </form>
+  <div class="" id="formeditod">
+    <form #myFormOd="ngForm"  method="post">
+      <input type="hidden" value="" name="id" [(ngModel)]="objOd.id" />
+      <input
+        type="hidden"
+        value=""
+        name="odNameSp"
+        [(ngModel)]="objOd.odNameSp"
+      />
+      <input type="hidden" value="" name="sosp" [(ngModel)]="objOd.sosp" />
+      <input type="hidden" value="" name="code" [(ngModel)]="objOd.code" />
+      <input
+        type="hidden"
+        value=""
+        name="giatamtinh"
+        [(ngModel)]="objOd.giatamtinh"
+      />
+      <input
+        type="hidden"
+        value=""
+        name="tongtien"
+        [(ngModel)]="objOd.tongtien"
+      />
+      <input
+        type="hidden"
+        value=""
+        name="gioitinh"
+        [(ngModel)]="objOd.gioitinh"
+      />
+      <input
+        type="hidden"
+        value=""
+        name="odNumber"
+        [(ngModel)]="objOd.odNumber"
+      />
+      <input type="hidden" value="" name="odName" [(ngModel)]="objOd.odName" />
+      <input type="hidden" value="" name="odTinh" [(ngModel)]="objOd.odTinh" />
+      <input
+        type="hidden"
+        value=""
+        name="odHuyen"
+        [(ngModel)]="objOd.odHuyen"
+      />
+      <input type="hidden" value="" name="odXa" [(ngModel)]="objOd.odXa" />
+      <input type="hidden" value="" name="odXom" [(ngModel)]="objOd.odXom" />
+      <input
+        name="tinhtrang"
+        [(ngModel)]="objOd.tinhtrang"
+        type="text"
+        value=""
+        placeholder="Trạng thái đơn hàng"
+      />
+      <td>
+        <button
+          type="button"
+          class="btn btn-danger"
+          (click)="updateOd(myFormOd.value)"
+          *ngIf="checkAction"
+        >
+         Lưu
+        </button>
+        <button
+          type="button"
+          class="btn btn-danger"
+          *ngIf="!checkAction"
+        >
+          Đã lưu
+        </button>
+        
+      </td>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<app-toppage></app-toppage>
+<div class="container">
+    <div class="row" *ngFor="let itemPro of dataCart">
+        <div class="col-md-12">
+            <div class="card-cart">
+                <img src="assets/images/{{itemPro.imgCart}}.jpg" class="card-img-top" alt="...">
+                <div class="cart-body">
+                    <i class="far fa-window-close delete-cart" (click)="deleteCart(itemPro)"></i>
+                    <p>{{itemPro.priceCart}}</p>
+                  <h6 class="card-title">{{itemPro.nameCart}}</h6>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>
+

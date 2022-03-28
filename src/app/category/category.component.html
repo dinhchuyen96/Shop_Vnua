@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <form #myForm="ngForm">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Thêm danh mục</label>
+                    <input type="text" class="form-control" name="catName" id="exampleFormControlInput1"
+                        placeholder="Nhập tên danh mục" [(ngModel)]="objCat.catName">
+                    <input type="hidden" class="form-control" name="id" id="exampleFormControlInput1"
+                        placeholder="thẻ ẩn ID" [(ngModel)]="objCat.id">
+                </div>
+                <div class="mb-3">
+                    <button type="button" class="btn btn-primary" (click)="addNewCategory(myForm.value)" *ngIf="!checkAction">Thêm
+                        mới</button>
+                    <button type="button" class="btn btn-primary" (click)="updateCategory(myForm.value)" *ngIf="checkAction">Cập Nhật</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <table class="table-primary table-striped">
+                <tr class="table-primary">
+                    <th>#</th>
+                    <th>Tên danh mục</th>
+                    <th>Sửa</th>
+                    <th>Xóa</th>
+                </tr>
+                <tr *ngFor="let itemCat of dataCate">
+                    <td>{{itemCat.id}}</td>
+                    <td>{{itemCat.catName}}</td>
+                    <td><button type="button" class="btn btn-warning" (click)="editCat(itemCat)">Sửa</button></td>
+                    <td><button type="button" class="btn btn-danger" (click)="deleteCategory(itemCat)">Xóa</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

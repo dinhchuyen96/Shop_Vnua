@@ -1,0 +1,62 @@
+<app-toppage [text]="text"></app-toppage>
+<div class="container-fluid">
+  <div class="row border2 mt-5 mb-5">
+    <div class="col-md-12 mb-3">
+      <form #formlogin="ngForm">
+        <div class="mb-3">
+          <!-- <label for="exampleInputEmail1" class="form-label"
+            >Email hoặc số điện thoại</label
+          > -->
+          <div style="display: flex">
+            <input
+              (click)="hidewarning()"
+              type="email"
+              class="mt-4 center form-control"
+              name="user"
+              [(ngModel)]="uselogin"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+            />
+            <i *ngIf="checkac" class="fas mt-2 iconer1 fa-exclamation-triangle"></i>
+          </div>
+          <div id="emailHelp" class="form-text"></div>
+        </div>
+        <div class="mb-3">
+          <!-- <label for="exampleInputPassword1" class="form-label">Mật khẩu</label> -->
+          <div style="display: flex">
+            <input
+              (click)="hidewarning()"
+              [type]="show ? 'text' : 'password'"
+              class="center form-control"
+              name="password"
+              [(ngModel)]="passlogin"
+              id="exampleInputPassword"
+            />
+            <button (click)="password()">
+              <i class="fas fa-eye showhidepassword"></i>
+            </button>
+            <i *ngIf="checkpw" class="fas mt-2 iconer2 fa-exclamation-triangle"></i>
+          </div>
+        </div>
+        <button
+          type="submit"
+          class="btn btn-primary btn-login"
+          (click)="login()"
+        >
+          Đăng Nhập
+        </button>
+        <p *ngIf="wronglogin" class="wronglogin">Sai thông tin đăng nhập</p>
+      </form>
+      <hr class="mt-4" />
+      <div class="mt-2 col-md-12">
+        <button
+          routerLink="/register"
+          class="btn-register2 center btn btn-success"
+        >
+          Tạo Tài khoản
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

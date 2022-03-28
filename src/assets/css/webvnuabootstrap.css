@@ -1,0 +1,796 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+body {
+  overflow-x: hidden;
+}
+@font-face {
+  font-family: medium_roboto;
+  src: url("./Roboto-Medium.ttf");
+}
+@font-face {
+  font-family: Roboto-Regular;
+  src: url("./Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: Roboto-Bold;
+  src: url("./Roboto-Bold.ttf");
+}
+/* Css cart  */
+.card-cart{
+  border: solid 1px;
+  margin: 0.5rem 25rem;
+  display: flex !important;
+}
+.card-cart img{
+  width: 80px;
+  height: 80px;
+}
+.cart-body{
+  padding: 0;
+}
+.delete-cart{
+  top: 0px;
+  left: 213px !important;
+}
+/* css toppage  */
+.cart{
+  border: solid 1px red;
+}
+
+.cart a{
+  text-decoration: none;
+}
+.number-cart{
+  color: red;
+  font-weight: bolder;
+  font-size: 20px;
+  padding-left: 5px;
+}
+.btn-login-top a{
+  text-decoration: none;
+}
+.logout {
+  margin-top: 9px;
+  margin-left: 10px;
+  height: 2.5rem;
+}
+.hi-text {
+  margin-left: 30rem;
+}
+.hi-top {
+  color: red;
+}
+.baner {
+  background-color: #06304d;
+  display: flex;
+  width: 100%;
+}
+.pd0 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.me-2 {
+  height: 30px;
+  float: right;
+  margin-top: 0px;
+  margin-left: -50px;
+}
+#btn-admin {
+  position: absolute;
+  right: 6rem;
+  top: 2rem
+}
+.admin {
+  margin-left: 8rem;
+  margin-top: 1rem;
+}
+.ntk {
+  width: 4rem;
+  height: 1.9rem;
+}
+#toppage21 {
+  font-size: 18px !important;
+}
+.ps-10 {
+  padding-left: 10rem;
+}
+.baner1 {
+  display: flex;
+}
+.f1d4 {
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+  position: relative;
+}
+.mt-435 {
+  margin-left: -2.5rem;
+}
+.navbar-collapse {
+  padding-left: 8rem;
+  height: 30px;
+}
+.dropdown-toggle {
+  line-height: 49px;
+  font-family: medium_roboto;
+  text-decoration: none;
+  color: #02203a !important;
+  font-size: 14px;
+}
+.menu ul {
+  margin: -15px 105px;
+}
+.menu ul li {
+  float: left;
+  list-style: none;
+  padding: 10px;
+  position: relative;
+}
+.menu ul li a {
+  line-height: 49px;
+  font-family: medium_roboto;
+  text-decoration: none;
+  color: #02203a;
+  font-size: 14px;
+}
+.menu ul li > ul {
+  position: absolute;
+  background-color: rgba(241, 225, 225, 0.863);
+  visibility: hidden;
+  margin-left: 12px;
+}
+.menu ul li:hover > ul {
+  visibility: visible;
+}
+.menu ul li .submenu li:hover {
+  background-color: tomato;
+}
+.menu ul li .submenu li {
+  height: 40px;
+  padding: 0px;
+  width: 210px;
+  border-bottom: dotted 1px;
+  float: left;
+}
+.than {
+  max-width: 1030px;
+  margin: 0 auto;
+}
+.tieudethan {
+  list-style: none;
+  height: 43px;
+  text-align: center;
+  padding-top: 10px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.than a {
+  font-size: 20px;
+  color: white;
+  font-family: medium_roboto;
+  text-decoration: none;
+}
+.w-100 {
+  height: 25rem;
+}
+.tintuc {
+  /* background-color: #f09b1a;  */
+  width: 50vw;
+  margin-left: 4vw;
+  border: 1px solid #ccc;
+  border-top: 3px solid #009966;
+  padding-bottom: 15px;
+  text-align: justify;
+  padding-right: 0 !important;
+}
+.tintong {
+  display: flex;
+}
+.tin-title a {
+  text-decoration: none;
+  font: 500 16px/40px Roboto-Bold;
+  text-transform: uppercase;
+  color: #009966;
+  font-weight: bold;
+}
+.text-tinchinh {
+  text-align: left !important;
+  font-size: 14px !important;
+}
+.tinchinh {
+  width: 50%;
+  margin-right: 10px;
+}
+.title-tinchinh {
+  font-size: 15px;
+  font-weight: bold;
+  color: #014e61;
+  display: block;
+  text-align: left !important;
+}
+.tinphu {
+  width: 50%;
+  height: 400px;
+  overflow: scroll;
+}
+.thongbao {
+  width: 25.5vw;
+  /* background-color: green; */
+  border: 1px solid #ccc;
+  border-top: 3px solid #cc0000;
+  overflow: hidden;
+}
+
+.thongbao-title a {
+  text-decoration: none;
+  font: 500 16px/40px Roboto-Bold;
+  color: #663300;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.cc20 a {
+  font-size: 12px;
+  line-height: 50px;
+  color: #4e383b !important;
+  font-family: medium_roboto;
+  text-align: center;
+}
+.bg-light {
+  background-color: white !important;
+}
+.canchinh {
+  margin-left: 31px;
+  margin-right: 31px;
+}
+.canchinh1 {
+  text-align: center;
+  margin-left: -50px;
+}
+.canbangtin {
+  /* width: 1082px !important; */
+  padding-left: 56px;
+  height: 480px;
+}
+.card-text {
+  font-size: 14px !important;
+  font-family: Roboto-Regular !important;
+}
+.card-text-tinphu {
+  text-align: left !important;
+}
+.tinkhac ul li a {
+  display: flex;
+  text-decoration: none;
+  font-size: 15px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.card {
+  align-items: center;
+  border: none;
+}
+.card-pro:hover {
+  box-shadow: 4px 4px 4px rgb(81, 81, 236);
+}
+.card-group {
+  width: 88px !important;
+}
+.card-body {
+  padding-right: 0px;
+}
+.card-body h5,
+.card-body p {
+  margin-left: -15px;
+}
+.overflow {
+  overflow: scroll;
+}
+.pd0 {
+  padding-left: 0 !important;
+}
+.card-img-top1 {
+  width: 36px;
+  height: 36px;
+}
+.cardcao {
+  height: 395px !important;
+}
+.card-title a {
+  color: black;
+  text-decoration: none;
+  font-family: Roboto-Regular;
+  font-size: 12px;
+}
+.bottomlink {
+  display: inline-flex;
+  margin-left: 2.5rem;
+}
+.col-md-1 {
+  width: 9.5%;
+}
+.bottomlink a {
+  width: 90px;
+  padding-left: 0px;
+  text-align: center;
+  color: #4b4b4b;
+  font-size: 12px;
+  font-family: Roboto-Regular;
+  text-decoration: none;
+}
+.borderhome {
+  display: block;
+  height: 90px;
+  padding: 5px;
+  overflow: hidden;
+  border-color: #e1e1e1 #e1e1e1 #feae17;
+  border-style: solid;
+  border-width: 1px 1px 2px;
+  margin: 0 2px;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #066140;
+  border-radius: 10px;
+  margin-right: -20px !important;
+  scroll-margin-right: -10px;
+}
+.col-sm-1 {
+  width: 9.5%;
+}
+.col-sm-1 a img {
+  display: block;
+  margin: 0 auto;
+}
+.marginft {
+  margin-left: 9rem;
+}
+.ke {
+  height: 5px;
+}
+.ke2 {
+  margin: 0 auto;
+  height: 5px;
+}
+.logohvn a {
+  font-size: 36px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #0b6d3a;
+  float: left;
+}
+.diachi {
+  width: 500px;
+  height: 45px;
+}
+.pt-13 {
+  padding-top: 0.7rem;
+}
+.inforft {
+  color: green;
+  margin-left: 9.5rem;
+}
+.btft {
+  margin-left: 11rem;
+}
+/* Css trang đăng ký - register */
+.register {
+  margin: 0 auto;
+}
+.duplicate-ac{
+  color: red;
+  position: absolute;
+  top: 350px;
+  left: 730px;
+}
+.form-date {
+  width: 50%;
+}
+.btn-register {
+  width: 60%;
+  margin: 0 auto !important;
+}
+.btn-register2 {
+  margin: 0 auto !important;
+  position: relative;
+  right: -11rem;
+}
+.register input {
+  padding: 10px;
+}
+.border3 {
+  margin: 0 auto;
+  padding: 20px;
+  border: solid 1px wheat;
+  background-color: white;
+}
+.register-name {
+  display: flex;
+}
+.register-fistname,
+.register-lastname {
+  width: 45%;
+  height: 2.2rem;
+}
+.bgc-register {
+  background-color: rgb(188, 221, 169);
+  background-size: 150vh 150vw;
+}
+.text-date {
+  margin-bottom: -5px;
+}
+/* Css login */
+.iconer1{
+  right: 32rem;
+  top: 13.5rem;
+}
+.iconer2{
+  right: 32rem;
+  top: 16.75rem;
+}
+.fa-exclamation-triangle{
+  position: absolute;
+}
+.showhidepassword {
+  position: absolute;
+  left: 48.5rem;
+  top: 17.5rem;
+}
+.wronglogin {
+  color: red;
+  margin-left: 10rem;
+  position: absolute;
+}
+.thandangnhap {
+  width: 1000px;
+  height: 630px;
+  border: solid 1px whitesmoke;
+  margin: 0 auto;
+}
+.fa-exclamation-triangle {
+  color: red;
+}
+#exampleInputPassword {
+  width: 250px;
+}
+#exampleInputEmail1 {
+  width: 250px;
+}
+.thandangnhap .dndinh {
+  width: 1010px;
+  height: 30px;
+  background-color: rgb(108, 214, 200);
+}
+.thandangnhap .dndinh h5,
+.dndinh h5 a {
+  float: right;
+  color: red;
+  text-decoration: none;
+}
+.linehet {
+  border-radius: 9px;
+  height: 8px;
+  background-color: #f6a309;
+  width: 1010px;
+}
+.mucluc ul {
+  display: flex;
+  background-color: rgb(235, 220, 220);
+  width: 1010px;
+}
+.mucluc ul li {
+  list-style: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.mucluc ul li a {
+  font-size: 9pt;
+  font-family: Roboto-Regular;
+  font-weight: bold;
+  color: rgb(17, 17, 136);
+  text-decoration: none;
+  padding-left: 10px;
+}
+.form-control1 {
+  width: 150% !important;
+}
+.form-control {
+  width: 100%;
+}
+.mb3 {
+  margin: 0 auto;
+  width: 450px;
+}
+.border2 {
+  margin: 0 auto;
+  width: 500px;
+  height: 275px;
+  border: solid 1px wheat;
+  background-color: white;
+}
+.btn-login {
+  width: 53%;
+  margin-left: 7rem;
+}
+.center {
+  margin: 0 auto;
+}
+/* css Trang detail */
+.delete-comment{
+  left: 10px!important;
+  top: 5px;
+  font-size: 15px !important;
+}
+.sendcomment {
+  display: flex;
+}
+.nameuser-comment {
+  font-weight: bold;
+}
+.comments {
+  display: flex;
+  margin-bottom: -15px;
+}
+.avatar-comment {
+  border-radius: 50%;
+  position: relative;
+}
+.comments img,
+.avatar-comment {
+  width: 40px;
+}
+.comment1 p {
+  width: 949px;
+}
+.btnSubmit {
+  font-size: 13px;
+  color: #fff;
+  background: #009cd7;
+  padding: 7px 22px;
+  float: right;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+.form-controlcmt {
+  font-size: 14px;
+  height: 55px;
+  border-color: #dcdcdc;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+#imgdetail {
+  width: 400px;
+  height: 350px;
+}
+.block {
+  display: block !important;
+}
+
+/* css button to top*/
+#myBtn {
+  display: none; /* Hidden by default */
+  transition: 1s;
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #ee4949; /* Add a dark-grey background on hover */
+}
+#exampleFormControlInput1,
+#proName1,
+#ProNamedetail,
+#proName,
+#submenu121 {
+  text-transform: uppercase;
+}
+/* Css product */
+#imgpro {
+  width: 250;
+  height: 300px;
+}
+.card2 {
+  overflow: hidden;
+}
+.card2 img:hover {
+  transform: scale(1.5);
+  transition: 2s;
+}
+.link-info,
+.admin {
+  text-decoration: none;
+}
+.noteIf {
+  width: 260px;
+  height: 50px;
+  border: solid 1px green;
+  margin-left: 25rem;
+}
+.btNote {
+  margin-left: 26rem;
+}
+.bangsp {
+  background-color: rgb(81, 165, 81);
+  color: black;
+  border: solid 1px;
+}
+.bangsp th,
+tr td {
+  border: solid 1px;
+}
+.bangsp th,
+.card-text,
+.card-body a,
+.card-body h5,
+.table-info th,
+td,
+.table-primary th {
+  text-align: center;
+}
+.card-body {
+  display: grid;
+}
+/* CSS trang addpro*/
+#thongtinsp {
+  width: 700px;
+  height: 100px;
+}
+/* #exampleFormControlInput31{
+    height: 200px;
+    width: 50px;
+} */
+/* Css trong infocus */
+.thongtin {
+  color: orange;
+  text-align: center;
+  margin: 0 auto;
+}
+/* CSS Admin */
+.overad {
+  /* background-color: blanchedalmond; */
+  height: 620px;
+}
+.menuads tr td h2 a {
+  text-decoration: none;
+}
+.menuads {
+  margin-left: 480px;
+}
+.tb-ac {
+  margin: 0 auto;
+}
+.tb-ac th {
+  text-align: center;
+}
+.fa-window-close {
+  color: red;
+  position: relative;
+  font-size: 20px;
+  left: 900px;
+}
+
+/* CSS  Trang order và myorders */
+#formeditod form {
+  margin-top: 10px;
+  margin: 0 auto;
+  width: 200px;
+}
+#formeditod form button {
+  margin-left: 95px;
+  margin-top: 15px;
+}
+#formeditod form input {
+  margin: 0 auto;
+  border: 1px solid;
+  width: 250px;
+  height: 50px;
+  text-align: center;
+}
+#table-orders {
+  overflow-y: hidden;
+}
+#dataod {
+  /* border: 1px solid; */
+  height: 500px;
+  overflow: scroll;
+}
+
+.itemod {
+  background-color: wheat;
+  width: 800px;
+  margin: 0 auto;
+  height: fit-content;
+  border: solid 1px;
+}
+.itemod img {
+  width: 300px;
+  height: auto;
+}
+#minus,
+#plus {
+  width: 40px;
+  height: 40px;
+}
+.price1 {
+  color: red;
+}
+#price {
+  margin-left: 0em;
+}
+#proName {
+  width: 300px;
+  text-align: center;
+  text-decoration: none;
+}
+#khung a {
+  text-decoration: none !important;
+}
+#sl {
+  text-align: center;
+  width: 55px;
+  height: 40px;
+}
+.summoney h4 {
+  color: red;
+  font-weight: bold;
+}
+.discount {
+  color: rgb(24, 148, 197);
+}
+.btn-light {
+  background-color: white;
+  color: rgb(59, 137, 209);
+}
+#ipdc {
+  width: 195px;
+  height: 37px;
+}
+#ipName,
+#ipNumber,
+#ipTinh,
+#ipHuyen {
+  width: 45%;
+}
+#ipNumber {
+  margin-left: 30px;
+}
+#ipTinh,
+#ipHuyen,
+#ipXa,
+#ipXom {
+  margin-left: 32px;
+  width: 42.5%;
+}
+#dathang {
+  width: 100%;
+}
+#orderss {
+  width: 100%;
+  margin-left: 0px;
+  margin-top: 0px !important;
+}
+/* @media(max-width: 1030px){
+    .container-fluid{
+        width: 100%;
+    }
+} */

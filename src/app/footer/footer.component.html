@@ -1,0 +1,55 @@
+<footer>
+  <div class="container-fluid">
+    <button onclick="topFunction()" id="myBtn" title="Go to top" class="">
+      <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </button>
+    <div class="row">
+      <div class="mt-4" style="padding-left: 0;
+      padding-right:0">
+        <div class="ke col-sm-12" style="background-color: #f6a309; width: 100vw"></div>
+        <div class="ke col-sm-12" style="background-color: #066140;width: 100vw"></div>
+        <div class="ke col-sm-12" style="background-color: #4e3636;width: 100vw"></div>
+      </div>
+    </div>
+    <div class="row marginft">
+      <div class="col-md-5">
+        <div class="logohvn"><a routerLink=""> HVN</a></div>
+        <div style="height: 30px; font-size: 12px; margin-top: 7px">
+          Học viện <br />
+          Nông nghiệp Việt Nam
+        </div>
+        <p class="diachi">
+          <br />Địa chỉ: Trâu Qùy - Gia Lâm - Hà Nội<br />
+          Điện thoại: 84.024.62617586 - Fax: 84 024 62617586 /
+          webmaster@vnua.edu.vn
+        </p>
+      </div>
+      <div class="col-md-7 mt-3">
+        <h5 class="inforft">Nhận thông tin</h5>
+        <form action="" method="post" #myForm2="ngForm">
+          <input type="hidden" name="ifId" />
+          <input type="text" name="ifName" placeholder="Họ và tên" ngModel />
+          <input
+            type="text"
+            name="ifNumber"
+            placeholder="Số điện thoại"
+            ngModel
+          />
+          <input type="email" name="ifEmail" placeholder="Email" ngModel />
+          <input type="hidden" name="ifNote" placeholder="Email" ngModel />
+          <button
+            type="button"
+            class="btn btn-info btft mt-3"
+            *ngIf="!check"
+            (click)="addNewIf(myForm2.value)"
+          >
+            Đăng ký
+          </button>
+          <button type="button" class="btn btn-success btft mt-3" *ngIf="check">
+            Thành công
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</footer>

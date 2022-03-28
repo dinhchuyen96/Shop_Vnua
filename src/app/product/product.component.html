@@ -1,0 +1,31 @@
+<app-toppage></app-toppage>
+<div class="container">
+    <div style="margin-left: 4rem;">
+        <!-- <div class="row" *ngFor="let itemCat of dataCate">
+            <h3>Sản Phẩm > {{itemCat.catName}}</h3>
+        </div> -->
+        <div class="row">
+            <div class="col-md-4 col-sm-6 mt-5 mb-4 " *ngFor="let itemPro of dataPro">
+                <div class="card-pro card" style="width: 18rem;">
+                    <div class="card2">
+                        <img id="imgpro" src="./assets/images/{{itemPro.proImage}}.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class=""><a routerLink="/detail/{{itemPro.id}}" class="link-info"
+                                id="proName1">{{itemPro.proName}}</a></h5>
+                        <p class="card-text">{{itemPro.proStt}}</p>
+                        <form hidden action="" method="post" #cartForm="ngForm">
+                            <input type="text" name="idcart" [(ngModel)]="itemPro.id">
+                            <input type="text" name="nameCart" [(ngModel)]="itemPro.proName">
+                            <input type="text" name="imgCart" [(ngModel)]="itemPro.proImage">
+                            <input type="text" name="priceCart" [(ngModel)]="itemPro.proPrice">
+                        </form>
+                        <button type="button" (click)="addtocart(cartForm.value)" class="btn btn-success">thêm vào giỏ hảng</button>
+                        <a routerLink="/order/{{itemPro.id}}" class="btn btn-primary" style="width: 200px">Đặt hàng</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

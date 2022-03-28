@@ -1,0 +1,81 @@
+<app-toppage></app-toppage>
+<div class="container">
+  <div class="row mt-4 mb-4 ms-5">
+    <div class="col-md-6">
+      <img
+        id="imgdetail"
+        src="./assets/images/{{ itemPro.proImage }}.jpg"
+        alt=""
+      />
+    </div>
+    <div class="col-md-6">
+      <h2 id="ProNamedetail">{{ itemPro.proName }}</h2>
+      <p>
+        Giá bán: <span style="color: red">{{ itemPro.proPrice }}</span>
+      </p>
+      <button
+        routerLink="/order/{{ itemPro.id }}"
+        type="button"
+        class="btn btn-success"
+      >
+        Mua ngay
+      </button>
+      <p class="mt-4" style="color: red">Còn hàng</p>
+    </div>
+  </div>
+  <div class="row mt-4 pb-4 ms-5">
+    <h2>Mô tả sản phẩm</h2>
+    <p>{{ itemPro.proDes }}</p>
+  </div>
+
+  <div class="row mt-4 pb-4 ms-5">
+    <div class="col-md-6"  *ngFor="let itemLog of dataLoging">
+      <form #myForm="ngForm">
+        <input type="hidden" >
+        <h2>Phản hồi</h2>
+        <div class="sendcomment mt-5" *ngFor="let itemLog of dataLoging">
+          <span>
+            <img
+              class="avatar-comment"
+              src="https://scontent.fhan14-2.fna.fbcdn.net/v/t1.6435-9/164034738_1312842009116832_7642689532506495269_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=smDq0T_oW70AX_PG5KF&_nc_oc=AQl8WSJtsBZBzeygL5l4ucrzw1qZDiTSAT4R9zr8XQYK61SQgxO6M0xCg1ttUNyqwNsGsyINTtCchIuBwiozXJPR&_nc_ht=scontent.fhan14-2.fna&oh=5ec27055bb6d3a88073ad332297278eb&oe=61B4F508"
+          /></span>
+          <input
+            type="text"
+            class="form-controlcmt form-control"
+            id="txtComment" placeholder="Ý kiến của bạn?" name="comments" ngModel/>
+          <input type="hidden" name="idc" [(ngModel)]="idc" />
+          <input type="hidden" name="usercomment" />
+          <input type="hidden" name="namecmt" [(ngModel)]="name" value="">
+          <input type="date" hidden ngModel name="timecmt" value="{{today | date:'short'}}" >
+          <h6 [(ngModel)]="name" name="name">{{itemLog.fistname}}{{itemLog.lastname}}</h6>     
+        </div>
+      </form>
+      <button class="btnSubmit mb-4" *ngIf="!sended" (click)="postComment(myForm.value)">
+        Gửi bình luận
+      </button>
+      <button class="btnSubmit btn-success mb-4" *ngIf="sended">
+        Đã gửi bình luận
+      </button>      
+    </div>
+    <div *ngFor="let itemComment of comments">
+      <div class="comments">
+        <span
+          ><img
+            class="avatar-comment"
+            src="https://scontent.fhan14-2.fna.fbcdn.net/v/t1.6435-9/164034738_1312842009116832_7642689532506495269_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=smDq0T_oW70AX_PG5KF&_nc_oc=AQl8WSJtsBZBzeygL5l4ucrzw1qZDiTSAT4R9zr8XQYK61SQgxO6M0xCg1ttUNyqwNsGsyINTtCchIuBwiozXJPR&_nc_ht=scontent.fhan14-2.fna&oh=5ec27055bb6d3a88073ad332297278eb&oe=61B4F508"
+            alt=""
+            srcset=""
+        /></span>
+        <p class="ms-1 nameuser-comment">{{itemComment.namecmt}}&nbsp;</p>
+        <span class="time-cmt"> - {{today | date:'short'}}</span>
+      <i class="far fa-window-close delete-comment" *ngIf="btndelete" (click)="deleteComment(itemComment)"></i>
+      </div>
+      <div class="ms-5 comment1">
+        <p>
+          {{ itemComment.comments }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

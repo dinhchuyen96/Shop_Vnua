@@ -1,0 +1,59 @@
+<div class="container-fluid overad">
+  <div class="row">
+    <div class="col-md-8">
+      <table class="table-success menuads">
+        <tr>
+          <td>
+            <h2><a routerLink="/category">Thêm danh mục</a></h2>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2><a routerLink="/addpro">Thêm sản phẩm</a></h2>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2><a routerLink="/inforcus">Thông tin khách hàng</a></h2>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2><a routerLink="/dccode">Mã giảm giá</a></h2>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2><a routerLink="/my-orders">Đơn hàng</a></h2>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2><a (click)="getAllUser()">Tài khoản người dùng</a></h2>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div *ngIf="flag" class="row mt-4">
+    <div class="col-md-8 tb-ac">
+      <i class="far fa-window-close" (click)="close()"></i>
+      <table class="table">
+        <tr>
+          <th>Họ và tên</th>
+          <th>Tài khoản</th>
+          <th>Mật khẩu</th>
+          <th>Ngày Sinh</th>
+          <th>Giới tính</th>
+        </tr>
+        <tr *ngFor="let itemac of dataUse">
+          <td>{{itemac.fistname}} {{itemac.lastname}}</td>
+          <td>{{itemac.number}}</td>
+          <td>{{itemac.passWord}}</td>
+          <td>{{itemac.dateOfBirth}}</td>
+          <td>{{itemac.sex}}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
